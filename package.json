@@ -1,0 +1,22 @@
+{
+  "name": "devrjp-scroller",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "text": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scroll",
+    "react",
+    "awesome"
+  ],
+  "author": "devrjp",
+  "devDependencies": {
+    "esbuild": "^0.11.20"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
