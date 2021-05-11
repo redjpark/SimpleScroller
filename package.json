@@ -1,22 +1,38 @@
 {
-  "name": "devrjp-scroller",
+  "name": "rjp-scroller",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "description": "Easy to use scroller",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "license": "MIT",
   "scripts": {
-    "text": "echo \"Error: no test specified\" && exit 1"
+    "text": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-esm": "esbuild ./src/index.js --bundle --format=esm --outdir=dist",
+    "build": "node esbuild.js"
   },
   "keywords": [
     "scroll",
     "react",
     "awesome"
   ],
-  "author": "devrjp",
+  "author": "rjp",
   "devDependencies": {
-    "esbuild": "^0.11.20"
+    "@babel/core": "^7.14.0",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "babel-loader": "^8.2.2",
+    "esbuild": "^0.11.20",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "semantic-ui-css": "^2.4.1"
   },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "dependencies": {}
 }

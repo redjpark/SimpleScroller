@@ -2,7 +2,25 @@
 
 An easy to use scrolling lib!
 
-https://www.newline.co/courses/creating-react-libraries-from-scratch/setting-up-our-project
+https://github.com/redjpark/SimpleScroller
+
+# Usage
+```
+const scroller = useScroller(({
+  x: 5,
+  y: 200,
+  isSmooth: true
+}: Options))
+
+scroller();
+
+// Options
+type Options = {
+  x: number,
+  y: number,
+  isSmooth: boolean,
+}
+```
 
 MIT License
 
